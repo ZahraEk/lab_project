@@ -1,0 +1,12 @@
+module Clock(clk);
+  
+output reg clk;
+
+always
+begin 
+  clk = 0;
+  #20 clk = ~clk;
+  #20;
+end
+
+endmodule
